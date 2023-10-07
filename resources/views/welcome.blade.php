@@ -3,6 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#10161F">
+        <meta name="movileOptimized" content="width">
+        <meta name="handhelFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="manifest" href="{{asset('/manifest.json')}}">
 
         <title>Laravel</title>
 
@@ -19,6 +25,10 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+
+        <script type="text/javascript" src="{{asset('/main.js')}}"></script>
+        <script type="text/javascript" src="{{asset('/sw.js')}}"></script>
+
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
