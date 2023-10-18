@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ConfirmadoController;
+use App\Http\Controllers\EstadoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +24,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+Route::get('/estados/getEstados', [EstadoController::class,'getEstados']);
+Route::resource('/estados', EstadoController::class);
+Route::resource('/confirmados',ConfirmadoController::class);
