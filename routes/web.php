@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConfirmadoController;
 use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\GraficaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,7 @@ require __DIR__.'/auth.php';
 Route::get('/estados/getEstados', [EstadoController::class,'getEstados']);
 Route::resource('/estados', EstadoController::class);
 Route::resource('/confirmados',ConfirmadoController::class);
+
+// graficas
+Route::get('/graficas/confirmados', [GraficaController::class,'showGrafica']);
+Route::get('/graficas/datos/GetDatos',[GraficaController::class, 'GetDataConfrimados']);

@@ -91,5 +91,4 @@ class ConfirmadoController extends Controller
     {
         self::getCasosxestado();
     }
-    
 }

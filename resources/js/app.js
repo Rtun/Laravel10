@@ -22,6 +22,7 @@ import 'vuejs-datatable/dist/themes/bootstrap-4.esm';
 import {VuejsDatatableFactory} from 'vuejs-datatable';
 Vue.use(VuejsDatatableFactory);
 Vue.component('datatable-component', require('./components/DatatableComponent.vue').default);
+Vue.component('amchart-component', require('./components/GraficaConfirmadosComponent.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 /**
